@@ -9,12 +9,14 @@ public class Room {
 
     private String type;
     private int area;
+    private String status;
     private List<Furniture> furniture = new ArrayList<>();
 
 
     public Room(String type, int area) {
         this.type = type;
         this.area = area;
+        this.status = "Не добавлена";
     }
 
     public String getType() {
@@ -39,6 +41,14 @@ public class Room {
 
     public List<Furniture> getFurniture() {
         return furniture;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
 

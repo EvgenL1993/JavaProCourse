@@ -7,8 +7,12 @@ import java.util.List;
 
 public class ShowRooms {
     public void showRooms(Room room) {
-        System.out.println("Зайдя в комнату можно увидеть такую мебель как: ");
-        printFurniture(room.getFurniture());
+        if (room.getFurniture().isEmpty()) {
+            System.out.println();
+        } else {
+            System.out.println("Зайдя в комнату можно увидеть такую мебель как: ");
+            printFurniture(room.getFurniture());
+        }
     }
 
     private void printFurniture(List<Furniture> furniture) {
