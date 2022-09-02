@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ShowRooms {
     public void showRooms(Room room) {
-        System.out.println("Зайдя в комнату пожно увидеть такую мебель как: ");
+        System.out.println("Зайдя в комнату можно увидеть такую мебель как: ");
         printFurniture(room.getFurniture());
     }
 
