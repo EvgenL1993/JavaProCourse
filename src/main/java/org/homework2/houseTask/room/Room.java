@@ -1,4 +1,6 @@
-package org.homework2.houseTask.house;
+package org.homework2.houseTask.room;
+
+import org.homework2.houseTask.furniture.Furniture;
 
 import java.util.ArrayList;
 import java.util.List;

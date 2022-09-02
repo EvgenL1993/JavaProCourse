@@ -1,5 +1,7 @@
 package org.homework2.houseTask.house;
 
+import org.homework2.houseTask.room.Room;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,17 +11,17 @@ public class House {
     private String city;
     private String address;
     private Number area;
-    private Integer cost;
+    private int price;
     private String currency;
     private String status;
     private List<Room> rooms = new ArrayList<>();
 
-    public House(String type, String city, String address, Number area, Integer cost, String currency) {
+    public House(String type, String city, String address, Number area, int price, String currency) {
         this.type = type;
         this.city = city;
         this.address = address;
         this.area = area;
-        this.cost = cost;
+        this.price = price;
         this.currency = currency;
         this.status = "На продаже";
     }
@@ -56,12 +58,12 @@ public class House {
         this.area = area;
     }
 
-    public Integer getCost() {
-        return cost;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setCost(Integer cost) {
-        this.cost = cost;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     public String getCurrency() {

@@ -1,8 +1,8 @@
-package org.homework2.houseTask.roomServise;
+package org.homework2.houseTask.roomServices;
 
-import org.homework2.houseTask.house.Furniture;
+import org.homework2.houseTask.furniture.Furniture;
 import org.homework2.houseTask.house.House;
-import org.homework2.houseTask.house.Room;
+import org.homework2.houseTask.room.Room;
 
 import java.util.List;
 

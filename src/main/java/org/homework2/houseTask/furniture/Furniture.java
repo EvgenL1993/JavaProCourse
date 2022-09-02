@@ -1,16 +1,16 @@
-package org.homework2.houseTask.house;
+package org.homework2.houseTask.furniture;
 
 public class Furniture {
 
     private String name;
     private String type;
-    private int cost;
+    private int price;
     private String color;
 
-    public Furniture(String name, String type, int cost, String color) {
+    public Furniture(String name, String type, int price, String color) {
         this.name = name;
         this.type = type;
-        this.cost = cost;
+        this.price = price;
         this.color = color;
     }
 
@@ -30,12 +30,12 @@ public class Furniture {
         this.type = type;
     }
 
-    public int getCost() {
-        return cost;
+    public int getPrice() {
+        return price;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     public String getColor() {

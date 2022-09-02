@@ -1,16 +1,17 @@
 package org.homework2;
 
 import org.homework2.houseTask.enums.RoomType;
-import org.homework2.houseTask.house.Furniture;
+import org.homework2.houseTask.furniture.Furniture;
+import org.homework2.houseTask.furniture.SoftFurniture;
 import org.homework2.houseTask.house.House;
 import org.homework2.houseTask.enums.City;
 import org.homework2.houseTask.enums.HouseType;
-import org.homework2.houseTask.house.Room;
-import org.homework2.houseTask.houseServise.PayHouse;
-import org.homework2.houseTask.houseServise.ShowHouseAfterRenovation;
+import org.homework2.houseTask.room.Room;
+import org.homework2.houseTask.houseServices.PayHouse;
+import org.homework2.houseTask.houseServices.ShowHouseAfterRenovation;
 import org.homework2.houseTask.payer.Payer;
-import org.homework2.houseTask.roomServise.MakeRoom;
-import org.homework2.houseTask.roomServise.ShowRooms;
+import org.homework2.houseTask.roomServices.MakeRoom;
+import org.homework2.houseTask.roomServices.ShowRooms;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,14 +31,14 @@ public class App {
         makeRoom.makeRoom(room, house);
 
         List<Furniture> furnitures = new ArrayList<>();
-        Furniture sofa = new Furniture("Sofa", "Cushioned", 2000, "red");
-        Furniture bed = new Furniture("Bed", "Cushioned", 5000, "black");
-        Furniture chair = new Furniture("Сhair", "Cushioned", 1500, "black");
+        Furniture sofa = new SoftFurniture("Sofa", "Cushioned", 2000, "red", 120.5);
+        Furniture bed = new SoftFurniture("Bed", "Cushioned", 5000, "black", 220);
+        Furniture chair = new SoftFurniture("Сhair", "Cushioned", 1500, "black");
         furnitures.add(sofa);
         furnitures.add(bed);
         furnitures.add(chair);
         makeRoom.installFurniture(room, furnitures);
-        showHouseAfterRenovation.showHouseAfterRem(house);
-        showRooms.showRooms(house.getRooms().get(0));
+        showHouseAfterRenovation.showHouseAfterRenovation(house);
+        showRooms.showRooms(room);
     }
 }
