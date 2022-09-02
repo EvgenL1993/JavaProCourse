@@ -10,13 +10,14 @@ public class Room {
     private String type;
     private int area;
     private String status;
-    private List<Furniture> furniture = new ArrayList<>();
+    private final List<Furniture> furniture;
 
 
     public Room(String type, int area) {
         this.type = type;
         this.area = area;
         this.status = "Не добавлена";
+        this.furniture = new ArrayList<>();
     }
 
     public String getType() {

@@ -24,7 +24,7 @@ public class App {
         ShowHouseAfterRenovation showHouseAfterRenovation = new ShowHouseAfterRenovation();
 
 
-        Payer payer = new Payer("Evgen", "Lyashenko", 20, true, 200000);
+        Payer payer = new Payer("Evgen", "Lyashenko", 19, true, 200000);
         House house = new House(HouseType.APARTMENT.getType(), City.KIEV.getCity(), "Borchagovka", 89, 150000, "USD");
         newPay.payHouse(payer, house);
         Room room = new Room(RoomType.SLEEPING.getType(), 36);

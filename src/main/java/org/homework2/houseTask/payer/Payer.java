@@ -11,7 +11,7 @@ public class Payer {
     private int age;
     private boolean sex;
     private Integer balance;
-    private List<House> houses = new ArrayList<>();
+    private final List<House> houses;
 
     public Payer(String name, String serName, int age, boolean sex, Integer balance) {
         this.name = name;
@@ -19,6 +19,7 @@ public class Payer {
         this.age = age;
         this.sex = sex;
         this.balance = balance;
+        this.houses = new ArrayList<>();
     }
 
     public String getName() {

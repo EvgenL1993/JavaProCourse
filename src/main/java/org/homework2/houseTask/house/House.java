@@ -14,7 +14,7 @@ public class House {
     private int price;
     private String currency;
     private String status;
-    private List<Room> rooms = new ArrayList<>();
+    private final List<Room> rooms;
 
     public House(String type, String city, String address, Number area, int price, String currency) {
         this.type = type;
@@ -24,6 +24,7 @@ public class House {
         this.price = price;
         this.currency = currency;
         this.status = "На продаже";
+        this.rooms = new ArrayList<>();
     }
 
     public String getType() {
