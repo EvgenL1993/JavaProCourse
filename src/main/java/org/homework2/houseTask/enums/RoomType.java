@@ -1,7 +1,7 @@
 package org.homework2.houseTask.enums;
 
 public enum RoomType {
-    CHILDREN("Children"),
+    CHILDREN("children"),
     SLEEPING("sleeping"),
     BATHROOM("bathroom");
 

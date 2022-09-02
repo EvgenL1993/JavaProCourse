@@ -1,8 +1,8 @@
 package org.homework2.houseTask.enums;
 
 public enum HouseType {
-    APARTMENT("apartament"),
-    PRIVATE_HOUSE("private_house");
+    APARTMENT("apartment"),
+    PRIVATE_HOUSE("privateHouse");
 
     String type;
 
