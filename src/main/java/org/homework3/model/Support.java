@@ -32,8 +32,8 @@ public class Support extends User {
         return value;
     }
 
-    private void writeToFile() throws Exception {
-        FileWriter fileWriter = new FileWriter(FilePath.FILE_PATH.getFilePath());
+    public void writeToFile() throws Exception {
+        FileWriter fileWriter = new FileWriter(FilePath.FILE_PATH.getFilePath(), false);
         fileWriter.write(verse);
         fileWriter.close();
         System.out.println("Стих добавлен в файл");

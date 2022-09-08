@@ -81,17 +81,4 @@ public class User {
         this.inputText = scanner.nextLine();
         System.out.println("Введенный текст с клавиатуры: " + inputText);
     }
-
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", sex=" + sex +
-                ", country='" + country + '\'' +
-                '}';
-    }
 }
