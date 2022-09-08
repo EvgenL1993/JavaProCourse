@@ -20,7 +20,7 @@ public class Support extends User {
     }
 
 //    public boolean checkString(String text) throws Exception {
-//        // writeToFile();
+//        writeToFile();
 //        boolean value = false;
 //        FileReader fileReader = new FileReader(FilePath.FILE_PATH.getFilePath());
 //        Scanner scan = new Scanner(fileReader);
@@ -37,8 +37,8 @@ public class Support extends User {
 //        fileReader.close();
 //        return value;
 //    }
-
-    //    private void writeToFile() throws Exception {
+//
+//    private void writeToFile() throws Exception {
 //        FileWriter fileWriter = new FileWriter(FilePath.FILE_PATH.getFilePath(), false);
 //        fileWriter.write(verse);
 //        fileWriter.close();
