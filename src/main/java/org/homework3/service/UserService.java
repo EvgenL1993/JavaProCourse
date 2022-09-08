@@ -5,7 +5,7 @@ import org.homework3.model.Support;
 import org.homework3.model.User;
 
 public class UserService {
-    public void actionWithUser(User user) throws Exception {
+    public void actionWithUser(User user) {
         if (user instanceof Admin) {
             user.write();
             ((Admin) user).deleteFile(((Admin) user).checkString(user.getInputText()));

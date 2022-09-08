@@ -8,13 +8,14 @@ import org.homework3.userDataFectory.CreateUserModel;
 
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         CreateUserModel createUserModel = new CreateUserModel();
         UserService userService = new UserService();
 
         User user = createUserModel.createDefaultUser();
         Support support = createUserModel.createDefaultSupport();
         Admin admin = createUserModel.createDefaultAdmin();
+
         userService.actionWithUser(user);
         userService.actionWithUser(support);
         userService.actionWithUser(admin);
