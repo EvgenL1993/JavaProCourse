@@ -25,6 +25,9 @@ public class Support extends User {
                 break;
             }
         }
+        if (!value) {
+            System.out.println("Фаил не содержит переданную строку :" + text);
+        }
         fileReader.close();
         return value;
     }

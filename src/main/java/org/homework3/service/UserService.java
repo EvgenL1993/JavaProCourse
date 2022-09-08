@@ -8,12 +8,12 @@ public class UserService {
     public void actionWithUser(User user) throws Exception {
         if (user instanceof Admin) {
             user.write();
-            ((Admin) user).deleteFile(((Admin) user).checkString("Подобен лучу самурайский клинок"));
+            ((Admin) user).deleteFile(((Admin) user).checkString(user.getInputText()));
             return;
         }
         if (user instanceof Support) {
             user.write();
-            ((Support) user).checkString("Подобен лучу самурайский клинок");
+            ((Support) user).checkString(user.getInputText());
             return;
         }
         user.write();

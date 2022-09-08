@@ -9,6 +9,7 @@ public class User {
     private String password;
     private boolean sex;
     private String country;
+    private String inputText;
 
     public User(String name, String surname, String email, String password, boolean sex, String country) {
         this.name = name;
@@ -67,14 +68,18 @@ public class User {
         this.country = country;
     }
 
+    public String getInputText() {
+        return inputText;
+    }
+
     public void read(String text) {
         System.out.println("Переданное сообщение : " + text);
     }
 
     public void write() {
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-        System.out.println("Введенный текст с клавиатуры: " + text);
+        this.inputText = scanner.nextLine();
+        System.out.println("Введенный текст с клавиатуры: " + inputText);
     }
 
 
