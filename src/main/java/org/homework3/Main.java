@@ -12,9 +12,9 @@ public class Main {
         CreateUserModel createUserModel = new CreateUserModel();
         UserService userService = new UserService();
 
-        User user = createUserModel.createDefaultUser();
-        Support support = createUserModel.createDefaultSupport();
-        Admin admin = createUserModel.createDefaultAdmin();
+        final User user = createUserModel.createDefaultUser();
+        final Support support = createUserModel.createDefaultSupport();
+        final Admin admin = createUserModel.createDefaultAdmin();
 
         userService.actionWithUser(user);
         userService.actionWithUser(support);
