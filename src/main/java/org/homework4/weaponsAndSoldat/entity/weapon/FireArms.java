@@ -1,17 +1,17 @@
 package org.homework4.weaponsAndSoldat.entity.weapon;
 
-public abstract class SmallCaliberWeapons extends AutomaticWeapon {
+public abstract class FireArms extends Weapons {
 
     private double caliber;
     private double sightingRange;
     private double weight;
     private int ammoStore;
 
-    public SmallCaliberWeapons(String name, int yearOfIssue, double price) {
+    public FireArms(String name, int yearOfIssue, double price) {
         super(name, yearOfIssue, price);
     }
 
-    public SmallCaliberWeapons(String name, int yearOfIssue, double price, double caliber, double sightingRange, double weight, int ammoStore) {
+    public FireArms(String name, int yearOfIssue, double price, double caliber, double sightingRange, double weight, int ammoStore) {
         super(name, yearOfIssue, price);
         this.caliber = caliber;
         this.sightingRange = sightingRange;

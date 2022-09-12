@@ -1,12 +1,12 @@
 package org.homework4.weaponsAndSoldat.entity.weapon;
 
-public abstract class AutomaticWeapon implements Firearms {
+public abstract class Weapons implements ActionWithWeapon {
 
     private String name;
     private int yearOfIssue;
     private double price;
 
-    public AutomaticWeapon(String name, int yearOfIssue, double price) {
+    public Weapons(String name, int yearOfIssue, double price) {
         this.name = name;
         this.yearOfIssue = yearOfIssue;
         this.price = price;

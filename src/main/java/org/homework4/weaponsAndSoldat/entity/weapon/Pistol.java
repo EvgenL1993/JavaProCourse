@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndSoldat.entity.weapon;
 
-public final class Pistol extends SmallCaliberWeapons {
+public final class Pistol extends FireArms {
 
     private String producingCountry;
     private String holster;

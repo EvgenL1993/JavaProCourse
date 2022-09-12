@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndSoldat.entity.weapon;
 
-public final class MachineGun extends SmallCaliberWeapons {
+public final class MachineGun extends FireArms {
 
     private boolean machineGunStand;
     private boolean grenadeThrower;

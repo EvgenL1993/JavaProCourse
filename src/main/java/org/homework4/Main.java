@@ -24,23 +24,23 @@ public class Main {
         final AssaultSoldier assaultSoldier = new AssaultSoldier("Sergey", "Полковник", "M64", "Пикачу", "Медальйон", "Кора", "Надежный, американского образца");
         assaultSoldier.hostageRelease();
 
-        final SoldierSkills firstSoldat = new AssaultSoldier("Roril", "sergant", "M15");
-        firstSoldat.fire();
-        firstSoldat.takeAim();
-        final Responsibilities secondSoldat = new AssaultSoldier("Roril", "sergant", "M15");
-        secondSoldat.executeAnMission();
-        secondSoldat.rest();
-        final Weapon firstWeapon = new Avtomate("Example", 1993, 1000);
-        firstWeapon.buy();
-        firstWeapon.sell();
-        final Firearms secondWeapon = new Avtomate("Example", 1993, 1000);
-        secondWeapon.load();
-        secondWeapon.reload();
+        final SoldierSkills soldierSkills = new AssaultSoldier("Roril", "sergant", "M15");
+        soldierSkills.fire();
+        soldierSkills.takeAim();
+        final Responsibilities responsibilities = new AssaultSoldier("Roril", "sergant", "M15");
+        responsibilities.executeAnMission();
+        responsibilities.rest();
+        final PayWeapon payWeapon = new Avtomate("Example", 1993, 1000);
+        payWeapon.buy();
+        payWeapon.sell();
+        final ActionWithWeapon actionWithWeapon = new Avtomate("Example", 1993, 1000);
+        actionWithWeapon.load();
+        actionWithWeapon.reload();
 
-        final AutomaticWeapon automaticWeapon = new Pistol("Example", 1993, 1000);
-        automaticWeapon.oilTheWeapon();
-        final SmallCaliberWeapons smallCaliberWeapons = new Avtomate("Example", 1993, 1000);
-        smallCaliberWeapons.clean();
+        final Weapons weapons = new Pistol("Example", 1993, 1000);
+        weapons.oilTheWeapon();
+        final FireArms fireArms = new Avtomate("Example", 1993, 1000);
+        fireArms.clean();
 
         final Infantry infantry = new Sniper("Roril", "sergant", "M15");
         infantry.getMission();

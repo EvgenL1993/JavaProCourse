@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndSoldat.entity.weapon;
 
-public final class Avtomate extends SmallCaliberWeapons {
+public final class Avtomate extends FireArms {
     private boolean muffler;
     private boolean firingMode;
 
