@@ -1,7 +1,5 @@
 package org.homework4.weaponsAndArmy.entity.weapon;
 
-import org.homework4.weaponsAndArmy.Firearms;
-
 public abstract class AutomaticWeapon implements Firearms {
 
     private String name;
