@@ -36,13 +36,8 @@ public final class Avtomate extends SmallCaliberWeapons {
     }
 
     @Override
-    public void takeAim() {
-        System.out.println("Прицеливание с автомата: " + getName());
-    }
-
-    @Override
-    public void fire() {
-        System.out.println("Огонь ведеться с автомата: " + getName() + chekCaliber());
+    public void oilTheWeapon() {
+        System.out.println("Смазан автомата: " + getName());
     }
 
     @Override

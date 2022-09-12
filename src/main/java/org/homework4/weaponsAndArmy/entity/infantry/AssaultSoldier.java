@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.infantry;
 
-public final class AssaultSoldier extends Shooter {
+public final class AssaultSoldier extends Soldat {
     private String bodyArmor;
     private String helmet;
 
@@ -35,17 +35,17 @@ public final class AssaultSoldier extends Shooter {
     }
 
     @Override
-    public void fight() {
-        System.out.println("Штурмовые солдаты идут первыми.");
+    public void fire() {
+        System.out.println("Штурмовые солдаты стреляет с автомата " + getWeapon());
     }
 
     @Override
-    public void toPlan() {
-        System.out.println("Изучение местности штурмовым солдатом.");
+    public void takeAim() {
+        System.out.println("Штурмовые солдаты прицелился.");
     }
 
     @Override
-    public void completeCombatMission() {
+    public void executeAnMission() {
         System.out.println("Миссия выполнена штурмовым солдатом - успешно.");
     }
 

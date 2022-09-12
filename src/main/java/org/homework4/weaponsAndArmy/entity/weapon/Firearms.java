@@ -6,6 +6,4 @@ public interface Firearms extends Weapon {
 
     void reload();
 
-    void fire();
-
 }

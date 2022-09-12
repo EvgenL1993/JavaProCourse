@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.infantry;
 
-public final class Sniper extends Shooter {
+public final class Sniper extends Soldat {
     private String camouflageSuit;
     private String fireSpotter;
 
@@ -36,17 +36,17 @@ public final class Sniper extends Shooter {
     }
 
     @Override
-    public void fight() {
-        System.out.println("Снайпер воюет тихо.");
+    public void fire() {
+        System.out.println("Снайпер стреляет с далека. Используя " + getWeapon());
     }
 
     @Override
-    public void toPlan() {
-        System.out.println("Изучение местности снайпером.");
+    public void takeAim() {
+        System.out.println("Снайпер выполнил прицеливание в оптичиский прицел.");
     }
 
     @Override
-    public void completeCombatMission() {
+    public void executeAnMission() {
         System.out.println("Миссия выполнена успешно снайпером.");
     }
 

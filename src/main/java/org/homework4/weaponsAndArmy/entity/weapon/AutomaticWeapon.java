@@ -36,7 +36,7 @@ public abstract class AutomaticWeapon implements Firearms {
         this.price = price;
     }
 
-    public abstract void takeAim();
+    public abstract void oilTheWeapon();
 
 
 }

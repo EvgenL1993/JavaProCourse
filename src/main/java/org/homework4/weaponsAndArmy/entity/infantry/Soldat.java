@@ -1,42 +1,35 @@
 package org.homework4.weaponsAndArmy.entity.infantry;
 
-import org.homework4.weaponsAndArmy.Workout;
+public abstract class Soldat extends Infantry {
+    private String callSign;
+    private String mascot;
 
-public abstract class Soldat implements Infantry, Workout {
-
-    private String name;
-    private String rank;
-    private String weapon;
 
     public Soldat(String name, String rank, String weapon) {
-        this.name = name;
-        this.rank = rank;
-        this.weapon = weapon;
+        super(name, rank, weapon);
     }
 
-    public String getName() {
-        return name;
+    public Soldat(String name, String rank, String weapon, String callSign, String mascot) {
+        super(name, rank, weapon);
+        this.callSign = callSign;
+        this.mascot = mascot;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getCallSign() {
+        return callSign;
     }
 
-    public String getRank() {
-        return rank;
+    public void setCallSign(String callSign) {
+        this.callSign = callSign;
     }
 
-    public void setRank(String rank) {
-        this.rank = rank;
+    public String getMascot() {
+        return mascot;
     }
 
-    public String getWeapon() {
-        return weapon;
+    public void setMascot(String mascot) {
+        this.mascot = mascot;
     }
 
-    public void setWeapon(String weapon) {
-        this.weapon = weapon;
-    }
-
-    public abstract void getMission();
+    public abstract void preparationForDeparture();
 }

@@ -1,9 +1,5 @@
 package org.homework4;
 
-import org.homework4.weaponsAndArmy.entity.infantry.Army;
-import org.homework4.weaponsAndArmy.entity.weapon.Firearms;
-import org.homework4.weaponsAndArmy.entity.infantry.Infantry;
-import org.homework4.weaponsAndArmy.entity.weapon.Weapon;
 import org.homework4.weaponsAndArmy.entity.infantry.*;
 import org.homework4.weaponsAndArmy.entity.weapon.*;
 
@@ -28,30 +24,29 @@ public class Main {
         final AssaultSoldier assaultSoldier = new AssaultSoldier("Sergey", "Полковник", "M64", "Пикачу", "Медальйон", "Кора", "Надежный, американского образца");
         assaultSoldier.hostageRelease();
 
-        final Army firstSoldat = new AssaultSoldier("Roril", "sergant", "M15");
-        firstSoldat.fight();
-        firstSoldat.toPlan();
-        final Infantry secondSoldat = new AssaultSoldier("Roril", "sergant", "M15");
-        secondSoldat.completeCombatMission();
+        final SoldierSkills firstSoldat = new AssaultSoldier("Roril", "sergant", "M15");
+        firstSoldat.fire();
+        firstSoldat.takeAim();
+        final Responsibilities secondSoldat = new AssaultSoldier("Roril", "sergant", "M15");
+        secondSoldat.executeAnMission();
         secondSoldat.rest();
         final Weapon firstWeapon = new Avtomate("Example", 1993, 1000);
         firstWeapon.buy();
         firstWeapon.sell();
         final Firearms secondWeapon = new Avtomate("Example", 1993, 1000);
-        secondWeapon.fire();
         secondWeapon.load();
         secondWeapon.reload();
 
         final AutomaticWeapon automaticWeapon = new Pistol("Example", 1993, 1000);
-        automaticWeapon.takeAim();
+        automaticWeapon.oilTheWeapon();
         final SmallCaliberWeapons smallCaliberWeapons = new Avtomate("Example", 1993, 1000);
         smallCaliberWeapons.clean();
 
-        final Soldat soldat = new Sniper("Roril", "sergant", "M15");
-        soldat.getMission();
+        final Infantry infantry = new Sniper("Roril", "sergant", "M15");
+        infantry.getMission();
 
-        final Shooter shooter = new AssaultSoldier("Roril", "sergant", "M15");
-        shooter.preparationForDeparture();
+        final Soldat soldat = new AssaultSoldier("Roril", "sergant", "M15");
+        soldat.preparationForDeparture();
 
 
     }

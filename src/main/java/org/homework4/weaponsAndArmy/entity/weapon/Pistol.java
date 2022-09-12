@@ -42,13 +42,8 @@ public final class Pistol extends SmallCaliberWeapons {
     }
 
     @Override
-    public void takeAim() {
-        System.out.println("Прицеливание с пистолета: " + getName());
-    }
-
-    @Override
-    public void fire() {
-        System.out.println("Огонь ведеться с пистолета: " + getName() + chekCaliber());
+    public void oilTheWeapon() {
+        System.out.println("Смазан пистолета: " + getName());
     }
 
     @Override

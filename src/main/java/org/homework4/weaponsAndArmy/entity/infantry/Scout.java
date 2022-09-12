@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.infantry;
 
-public final class Scout extends Shooter {
+public final class Scout extends Soldat {
     private String map;
     private String camera;
 
@@ -35,17 +35,17 @@ public final class Scout extends Shooter {
     }
 
     @Override
-    public void fight() {
-        System.out.println("Разведчики воюют крайне редко");
+    public void fire() {
+        System.out.println("Разведчики стреляет крайне редко");
     }
 
     @Override
-    public void toPlan() {
-        System.out.println("Изучение местности разведчиком.");
+    public void takeAim() {
+        System.out.println("По необходимости");
     }
 
     @Override
-    public void completeCombatMission() {
+    public void executeAnMission() {
         System.out.println("Миссия разведчиком выполнена успешно.");
     }
 
