@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.army;
 
-public class Scout extends Shooter {
+public final class Scout extends Shooter {
     private String map;
     private String camera;
 

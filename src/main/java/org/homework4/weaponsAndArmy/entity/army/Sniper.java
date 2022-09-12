@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.army;
 
-public class Sniper extends Shooter {
+public final class Sniper extends Shooter {
     private String camouflageSuit;
     private String fireSpotter;
 

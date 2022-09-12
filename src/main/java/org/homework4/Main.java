@@ -1,5 +1,6 @@
 package org.homework4;
 
+import org.homework4.weaponsAndArmy.Army;
 import org.homework4.weaponsAndArmy.entity.army.AssaultSoldier;
 import org.homework4.weaponsAndArmy.entity.army.Scout;
 import org.homework4.weaponsAndArmy.entity.army.Sniper;
@@ -27,6 +28,9 @@ public class Main {
 
         AssaultSoldier assaultSoldier = new AssaultSoldier("Sergey", "Полковник", "M64", "Пикачу", "Медальйон", "Кора", "Надежный, американского образца");
         assaultSoldier.hostageRelease();
+
+        Army sold = new AssaultSoldier("Roril", "sergant", "M15");
+        sold.fight();
     }
 
 }

@@ -1,6 +1,6 @@
 package org.homework4.weaponsAndArmy.entity.army;
 
-public class AssaultSoldier extends Shooter {
+public final class AssaultSoldier extends Shooter {
     private String bodyArmor;
     private String helmet;
 
