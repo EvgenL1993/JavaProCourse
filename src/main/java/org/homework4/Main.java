@@ -39,12 +39,13 @@ public class Main {
         firstWeapon.sell();
         Firearms secondWeapon = new Avtomate("Example", 1993, 1000);
         secondWeapon.fire();
-        secondWeapon.takeAim();
+        secondWeapon.load();
+        secondWeapon.reload();
 
         AutomaticWeapon automaticWeapon = new Pistol("Example", 1993, 1000);
-        automaticWeapon.load();
+        automaticWeapon.takeAim();
         SmallCaliberWeapons smallCaliberWeapons = new Avtomate("Example", 1993, 1000);
-        smallCaliberWeapons.reload();
+        smallCaliberWeapons.clean();
 
         Soldat soldat = new Sniper("Roril", "sergant", "M15");
         soldat.getMission();

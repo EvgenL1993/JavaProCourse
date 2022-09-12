@@ -41,34 +41,34 @@ public final class AssaultSoldier extends Shooter {
 
     @Override
     public void toPlan() {
-        System.out.println("Изучение местности.");
+        System.out.println("Изучение местности штурмовым солдатом.");
     }
 
     @Override
     public void completeCombatMission() {
-        System.out.println("Миссия выполнена успешно.");
+        System.out.println("Миссия выполнена штурмовым солдатом - успешно.");
     }
 
     @Override
     public void rest() {
-        System.out.println("Отдых после выполнения миссии.");
+        System.out.println("Отдых после выполнения миссии штурмовым солдатом.");
     }
 
     @Override
     public void workout() {
-        System.out.println("Стрельба по мешеням. Силовые тренировки.");
+        System.out.println("Стрельба по мешеням. Силовые тренировки штурмовым солдатом.");
     }
 
     @Override
     public void preparationForDeparture() {
-        System.out.println("Чистка оружия.");
+        System.out.println("Чистка оружия штурмовым солдатом.");
     }
 
     @Override
     public void getMission() {
-        System.out.println("Миссия получена.");
+        System.out.println("Миссия получена штурмовым солдатом.");
     }
     public void hostageRelease(){
-        System.out.println("Заложники освобождены. Все целы и здоровы");
+        System.out.println("Заложники освобождены штурмовым солдатом. Все целы и здоровы");
     }
 }

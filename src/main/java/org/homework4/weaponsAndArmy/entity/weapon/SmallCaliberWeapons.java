@@ -51,7 +51,7 @@ public abstract class SmallCaliberWeapons extends AutomaticWeapon {
         this.ammoStore = ammoStore;
     }
 
-    public abstract void reload();
+    public abstract void clean();
 
     protected String chekCaliber() {
         return getCaliber() > 0.0 ? " калибра: " + getCaliber() + "." : " калибер данного атомата неизвестен.";

@@ -36,6 +36,11 @@ public final class MachineGun extends SmallCaliberWeapons {
     }
 
     @Override
+    public void clean() {
+        System.out.println("Почистил пулимет");
+    }
+
+    @Override
     public void takeAim() {
         System.out.println("Прицеливание с пулимета: " + getName());
     }
@@ -57,12 +62,12 @@ public final class MachineGun extends SmallCaliberWeapons {
 
     @Override
     public void load() {
-        System.out.println("Магазин заряжен, количество патронов в нем составляет : " + getAmmoStore());
+        System.out.println("Магазин пулимета заряжен, количество патронов в нем составляет : " + getAmmoStore());
     }
 
     @Override
     public void reload() {
-        System.out.println("Перезарядка магазина закончена.");
+        System.out.println("Перезарядка магазина пулимета закончена.");
     }
 
     public void installGrenadeThrower(boolean value) {

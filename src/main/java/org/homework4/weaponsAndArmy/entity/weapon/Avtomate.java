@@ -31,6 +31,11 @@ public final class Avtomate extends SmallCaliberWeapons {
     }
 
     @Override
+    public void clean() {
+        System.out.println("Почистил автомат");
+    }
+
+    @Override
     public void takeAim() {
         System.out.println("Прицеливание с автомата: " + getName());
     }
@@ -52,12 +57,12 @@ public final class Avtomate extends SmallCaliberWeapons {
 
     @Override
     public void load() {
-        System.out.println("Магазин заряжен, количество патронов в нем составляет : " + getAmmoStore());
+        System.out.println("Магазин автомата заряжен, количество патронов в нем составляет : " + getAmmoStore());
     }
 
     @Override
     public void reload() {
-        System.out.println("Перезарядка магазина закончена.");
+        System.out.println("Перезарядка магазина автомата закончена.");
     }
 
     public void switchShootingMode(boolean shootingMod) {

@@ -41,35 +41,35 @@ public final class Scout extends Shooter {
 
     @Override
     public void toPlan() {
-        System.out.println("Изучение местности.");
+        System.out.println("Изучение местности разведчиком.");
     }
 
     @Override
     public void completeCombatMission() {
-        System.out.println("Миссия выполнена успешно.");
+        System.out.println("Миссия разведчиком выполнена успешно.");
     }
 
     @Override
     public void rest() {
-        System.out.println("Отдых после выполнения миссии.");
+        System.out.println("Отдых после выполнения миссии разведчиком.");
     }
 
     @Override
     public void workout() {
-        System.out.println("Стрельба по мешеням. Бег.");
+        System.out.println("Тренировка для разведчика. Стрельба по мешеням. Бег.");
     }
 
     @Override
     public void preparationForDeparture() {
-        System.out.println("Подготовка средств навигации");
+        System.out.println("Подготовка средств навигации разведчиком");
     }
 
     @Override
     public void getMission() {
-        System.out.println("Миссия получена.");
+        System.out.println("Миссия получена разведчиком.");
     }
 
     public void detectEnemyPositions() {
-        System.out.println("Позиции врага обнаружены.");
+        System.out.println("Позиции врага обнаружены разведчиком.");
     }
 }

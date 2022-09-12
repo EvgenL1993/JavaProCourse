@@ -35,6 +35,12 @@ public final class Pistol extends SmallCaliberWeapons {
         this.holster = holster;
     }
 
+
+    @Override
+    public void clean() {
+        System.out.println("Почистил пистолет");
+    }
+
     @Override
     public void takeAim() {
         System.out.println("Прицеливание с пистолета: " + getName());
@@ -57,12 +63,12 @@ public final class Pistol extends SmallCaliberWeapons {
 
     @Override
     public void load() {
-        System.out.println("Магазин заряжен, количество патронов в нем составляет : " + getAmmoStore());
+        System.out.println("Магазин пистолета заряжен, количество патронов в нем составляет : " + getAmmoStore());
     }
 
     @Override
     public void reload() {
-        System.out.println("Перезарядка магазина закончена.");
+        System.out.println("Перезарядка магазина пистолета закончена.");
     }
 
     public void actionWithHolster(Boolean actionWithHolster) {

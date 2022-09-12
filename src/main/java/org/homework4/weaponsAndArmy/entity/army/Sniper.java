@@ -42,32 +42,32 @@ public final class Sniper extends Shooter {
 
     @Override
     public void toPlan() {
-        System.out.println("Изучение местности.");
+        System.out.println("Изучение местности снайпером.");
     }
 
     @Override
     public void completeCombatMission() {
-        System.out.println("Миссия выполнена успешно.");
+        System.out.println("Миссия выполнена успешно снайпером.");
     }
 
     @Override
     public void rest() {
-        System.out.println("Отдых после выполнения миссии.");
+        System.out.println("Отдых после выполнения миссии снайпером.");
     }
 
     @Override
     public void workout() {
-        System.out.println("Стрельба по мешеням.");
+        System.out.println("Стрельба по мешеням снайпером с большой дистанции.");
     }
 
     @Override
     public void preparationForDeparture() {
-        System.out.println("Чистка оружия.");
+        System.out.println("Чистка оружия снайпером.");
     }
 
     @Override
     public void getMission() {
-        System.out.println("Миссия получена.");
+        System.out.println("Миссия получена снайпером.");
     }
 
     public void highGroundSearch() {
