@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy.entity.army;
+package org.homework4.weaponsAndArmy.entity.infantry;
 
 public abstract class Shooter extends Soldat {
     private String callSign;

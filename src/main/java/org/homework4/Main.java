@@ -4,7 +4,7 @@ import org.homework4.weaponsAndArmy.Army;
 import org.homework4.weaponsAndArmy.Firearms;
 import org.homework4.weaponsAndArmy.Infantry;
 import org.homework4.weaponsAndArmy.Weapon;
-import org.homework4.weaponsAndArmy.entity.army.*;
+import org.homework4.weaponsAndArmy.entity.infantry.*;
 import org.homework4.weaponsAndArmy.entity.weapon.*;
 
 public class Main {

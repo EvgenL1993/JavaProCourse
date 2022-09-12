@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy.entity.army;
+package org.homework4.weaponsAndArmy.entity.infantry;
 
 public final class Scout extends Shooter {
     private String map;

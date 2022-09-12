@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy.entity.army;
+package org.homework4.weaponsAndArmy.entity.infantry;
 
 public final class AssaultSoldier extends Shooter {
     private String bodyArmor;

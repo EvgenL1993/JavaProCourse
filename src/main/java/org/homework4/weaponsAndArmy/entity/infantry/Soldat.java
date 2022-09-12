@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy.entity.army;
+package org.homework4.weaponsAndArmy.entity.infantry;
 
 import org.homework4.weaponsAndArmy.Infantry;
 import org.homework4.weaponsAndArmy.Workout;
