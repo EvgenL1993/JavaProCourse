@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy;
+package org.homework4.weaponsAndSoldat;
 
 public interface Workout {
     void workout();

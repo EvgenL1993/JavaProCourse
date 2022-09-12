@@ -1,4 +1,4 @@
-package org.homework4.weaponsAndArmy.entity.weapon;
+package org.homework4.weaponsAndSoldat.entity.weapon;
 
 public interface Firearms extends Weapon {
 

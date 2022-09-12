@@ -1,7 +1,7 @@
 package org.homework4;
 
-import org.homework4.weaponsAndArmy.entity.infantry.*;
-import org.homework4.weaponsAndArmy.entity.weapon.*;
+import org.homework4.weaponsAndSoldat.entity.infantry.*;
+import org.homework4.weaponsAndSoldat.entity.weapon.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package org.homework4.weaponsAndArmy.entity.infantry;
+package org.homework4.weaponsAndSoldat.entity.infantry;
 
-import org.homework4.weaponsAndArmy.Workout;
+import org.homework4.weaponsAndSoldat.Workout;
 
 public abstract class Infantry implements Responsibilities, Workout {
 
